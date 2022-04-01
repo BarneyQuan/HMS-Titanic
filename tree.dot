@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="X[1] <= 0.5\ngini = 0.473\nsamples = 891\nvalue = [549, 342]\nclass = Died", fillcolor="#f5cfb4"] ;
+1 [label="X[0] <= 2.5\ngini = 0.383\nsamples = 314\nvalue = [81, 233]\nclass = Survived", fillcolor="#7ebfee"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.1\nsamples = 170\nvalue = [9, 161]\nclass = Survived", fillcolor="#44a2e6"] ;
+1 -> 2 ;
+3 [label="X[5] <= 23.35\ngini = 0.5\nsamples = 144\nvalue = [72, 72]\nclass = Died", fillcolor="#ffffff"] ;
+1 -> 3 ;
+4 [label="gini = 0.484\nsamples = 117\nvalue = [48, 69]\nclass = Survived", fillcolor="#c3e1f7"] ;
+3 -> 4 ;
+5 [label="gini = 0.198\nsamples = 27\nvalue = [24, 3]\nclass = Died", fillcolor="#e89152"] ;
+3 -> 5 ;
+6 [label="X[2] <= 6.5\ngini = 0.306\nsamples = 577\nvalue = [468, 109]\nclass = Died", fillcolor="#eb9e67"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="gini = 0.444\nsamples = 24\nvalue = [8, 16]\nclass = Survived", fillcolor="#9ccef2"] ;
+6 -> 7 ;
+8 [label="X[0] <= 1.5\ngini = 0.28\nsamples = 553\nvalue = [460, 93]\nclass = Died", fillcolor="#ea9a61"] ;
+6 -> 8 ;
+9 [label="gini = 0.46\nsamples = 120\nvalue = [77, 43]\nclass = Died", fillcolor="#f4c7a8"] ;
+8 -> 9 ;
+10 [label="gini = 0.204\nsamples = 433\nvalue = [383, 50]\nclass = Died", fillcolor="#e89153"] ;
+8 -> 10 ;
+}
